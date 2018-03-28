@@ -24,7 +24,7 @@ class School
   
   def sort
     @roster.collect do |grade, names|
-      names.sort
+      names.each(\b.*\z).sort
     end
   end
   
